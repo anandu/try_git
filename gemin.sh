@@ -3,7 +3,7 @@
 cd /tmp
 tsocks git clone http://github.com/robertcarr/RightAPI.git
 cd RightAPI
-cat <<EOF> ./right_api.gemspec
+cat <<EOF > ./right_api.gemspec
 Gem::Specification.new do |s|
   s.name = %q{right_api}
   s.version = "0.1.1"
