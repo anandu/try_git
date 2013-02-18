@@ -4,7 +4,7 @@
  greeting="Hello World"
 
 # SETTING A GLOBAL/ENVIRONMENT VARIABLE
- export blogname="fuzicast"
+ export blogname="andycast"
 
 # ASSIGN OUTPUT OF SUBSHELL TO VARIABLE
  filenames=$(ls -ltr) # note that subshell inherits all environment variables from parent shell
@@ -26,18 +26,18 @@ COMMENT
 
 # IF STATEMENT
  if [ $[ $var1 + $var2 ] -gt 70 ];then
- echo "sum is greater than 70"
+  echo "sum is greater than 70"
  elif [ $[ $var1 + $var2 ] -lt 70 ];then
- echo "sum is less than 70"
+  echo "sum is less than 70"
  else
- echo "unknown"
+  echo "unknown"
  fi
 
 # WHILE STATEMENT
  var1=10
  while [ $var1 -gt 0 ];do
- echo "while \$var1 is greater than 0, keep running … "
- var1=$[ $var1 - 1 ]
+  echo "while \$var1 is greater than 0, keep running … "
+  var1=$[ $var1 - 1 ]
  done
 
 # UNTIL STATEMENT
@@ -56,7 +56,7 @@ COMMENT
  var1=1
  case $var1 in
  1) echo "hello world"
- echo "fuzicast video tutorials";;
+  echo "Bash tutorials";;
  2) echo "wrong option";;
  3) echo "guess again";;
  *) echo "Default option";;

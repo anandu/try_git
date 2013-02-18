@@ -13,6 +13,9 @@ done
 
 # Completed tests
 echo "Tests completed..."
-grep -v "TEST" log/*/*/*/*/$latestlog
+echo "******************"
+grep ": TEST" log/*/*/*/*/$latestlog | awk  {'print $6'}
+echo "******************"
 echo "Continuing with the log..."
+read -sn 1 -p "Press any key to continue..."
 tailf log/*/*/*/*/$latestlog

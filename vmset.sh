@@ -12,10 +12,10 @@ cp /root/virtualmonkey/config.yaml /root/virtualmonkey/.config.yaml
 
 # Copying cloud crendential in .fog
 cat <<EOF >> /root/.fog
-:aws_access_key_id_test: "none"
-:aws_secret_access_key_test: "none"
-:rackspace_managed_auth_key: "none"
-:rackspace_managed_username: "none"
+  :aws_access_key_id_test:        "none"
+  :aws_secret_access_key_test:    "none"
+  :rackspace_managed_auth_key:    "none"
+  :rackspace_managed_username:    "none"
 EOF
 
 # Modifying default values to match our environment
@@ -24,5 +24,6 @@ sed -i -e 's/2901/47738/g' -e 's/306150001/323487001/g' -e 's/8888/8000/g' -e 's
 sed -i -e 's/2901/47738/g' -e 's/187123/268127001/g'  -e 's/356585001/284232001/g' mixins/lamp_chef.rb
 git stash
 
+echo "##################################"
 echo "Please finish the colateral coding"
 echo "To start testing , please issue command 'git stash apply'"

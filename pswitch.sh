@@ -1,0 +1,10 @@
+#!/bin/bash
+# Just changes proxy setting , if detects 'none' changes to manual and vise-versa
+proxy_status=`gconftool-2 -g /system/proxy/mode`
+if [ "$proxy_status" = "none" ]; then
+  change_to="manual"
+elif [ "$proxy_status" = "manual" ]; then
+  change_to="none"
+fi
+
+gconftool-2 -s -t string /system/proxy/mode "$change_to"
