@@ -25,31 +25,31 @@ COMMENT
  echo $sum
 
 # IF STATEMENT
- if [ $[ $var1 + $var2 ] -gt 70 ];then
+if [ $[ $var1 + $var2 ] -gt 70 ];then
   echo "sum is greater than 70"
- elif [ $[ $var1 + $var2 ] -lt 70 ];then
+elif [ $[ $var1 + $var2 ] -lt 70 ];then
   echo "sum is less than 70"
- else
+else
   echo "unknown"
- fi
+fi
 
 # WHILE STATEMENT
  var1=10
  while [ $var1 -gt 0 ];do
-  echo "while \$var1 is greater than 0, keep running … "
-  var1=$[ $var1 - 1 ]
+   echo "while \$var1 is greater than 0, keep running … "
+   var1=$[ $var1 - 1 ]
  done
 
 # UNTIL STATEMENT
  var1=0
  until [ $var1 -gt 10 ];do
- echo "until \$var1 is greater than 30, keep running …"
- var1=$[ $var1 + 1 ]
+   echo "until \$var1 is greater than 30, keep running …"
+   var1=$[ $var1 + 1 ]
  done
 
 # FOR STATEMENT
  for arg in $@;do
- echo $arg
+   echo $arg
  done
 
 # CASE STATEMENT

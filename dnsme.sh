@@ -18,6 +18,12 @@ case "$1" in
   vm)
     dnsid=8077691
     ;;
+  chef1)
+    dnsid=10318680
+    ;;
+  chefserver)
+    dnsid=10630626
+    ;;
   h|-h|--help|?|-?)
     usage
     exit 0;
